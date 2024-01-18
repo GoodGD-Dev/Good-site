@@ -1,0 +1,36 @@
+@use 'var';
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: #fff;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: #fff;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(40px);
+}
+
+.title {
+    @include title(32px);
+}
+
+.title--small {
+    @include title(16px);
+}

@@ -1,0 +1,33 @@
+@use 'var';
+
+.header {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 16px;
+    background-color: var.$bg;
+
+    &__nav{
+        
+        &__navbar{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            align-items: center;
+            margin: 0 auto;
+
+            &__logo {
+
+            }
+
+            &__item {
+                a {
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
+}
